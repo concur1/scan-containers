@@ -23,12 +23,12 @@ pkgs.dockerTools.buildImage {
 """
 params = [
     {
-        "package": "python39",
+        "package": "python312",
         "bin_name": "python",
         "channel": "stable",
     },
     {
-        "package": "python39",
+        "package": "python312",
         "bin_name": "python",
         "channel": "unstable",
     },
@@ -59,8 +59,8 @@ for param in params:
 ## Scan other containers
 images = images + [
     "cgr.dev/chainguard/python:latest",
-    "python:3.9-slim",
-    "python:3.9-alpine",
+    "python:3.12-slim",
+    "python:3.12-alpine",
 ]
 for image in images:
    subprocess.run(
