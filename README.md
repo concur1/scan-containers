@@ -7,6 +7,7 @@ The script will:
 - Create and load those container images.
 - Run grype on those container images.
 - Run grype on a extra list of container images.
+- Print a table with a count of the vulns for each image.
 
 ## How to run:
 
