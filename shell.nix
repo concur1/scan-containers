@@ -4,6 +4,7 @@ in pkgs.mkShell {
   packages = [
 (pkgs.python312.withPackages (python-pkgs: [
       python-pkgs.black
+      python-pkgs.polars
     ]))
     pkgs.grype
     pkgs.docker
